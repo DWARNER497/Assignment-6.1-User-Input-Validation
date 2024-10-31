@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cooking Resistration</title>
+        </head>
+        <body style="background-color:powderblue;">
+            <header>
+                <h1>*** Cooking Resistration***</h1>
+                </header>
+            <p>Thousand of chef come here to share there cooking recipes.</p>
+        
+                </header>
+
+                <main>
+                    <hr/>
+                <h2>Resistration Form</h2>
+                <!--Create a label and input box for  the first name-->
+                <label>Frist Name:</label><br/>
+                <input type="text" id="fristName"></main><br/>
+                <!--Create a label and input box for the last time-->
+                <label>Last Name:</label><br/>
+                <input type="text" id="LastName">
+                <!--Stormtropper ID-->
+                <label>Chef ID:</label><br/>
+                <input type="text" id="ChefID"><br/>
+                <hr/>
+
+                <!--Create a button for user to submit-->
+                <botton onclick="checkForm()">Submit Form</botton>
+
+                <!--Notice we are leaving HTML and going into Javascript-->
+                <script>
+                    //Now we are in Javascript
+                    //Create a function to check the Deathstar Resistration Form
+                    // Check if the variable has more than >20 characters and give a 
+                    // Warning do not continue the program if invaild.
+                    function checkForm(){
+                        //Get the first name from the form
+                        var firstName = document.getElementById(firstName).value;
+                        //Get last name from the form
+                        var lastName = document.getElementById(LastName).vaule;
+                        //get the Stormstropper ID from the form
+                        var StormtropperID = document.getElementById(ChefID).vaule;
+                        //Check if the first name is more than 20 characters
+                        if(firstName.length > 20){
+                            alert("Frist Name is too long for a stormtropper.) Please enter a nme less than 20 characters.");
+                            return;
+                        }
+                        //Lets Combine the first and last naem and display it
+                        var fullName = firstName + " " + lastName;
+                        alert("Welcome to the Death Star " + fullName + "with Stormtrooper ID;" + ChefID);
+                    }
+                </script>
+                <!--Now we are back in HTML only-->
+                </main>
+                <footer>
+
+                </footer>
+
+        </body>
+</html>
